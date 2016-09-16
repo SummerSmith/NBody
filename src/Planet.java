@@ -89,8 +89,8 @@ public class Planet {
 		myYPos = myYPos + (seconds * myYVel);
 	}
 
-	public void draw(double myXPos2, double myYPos2, String myFileName) {
-		StdDraw.picture(myXPos2, myYPos2, myFileName);
+	public void draw() {
+		StdDraw.picture(this.myXPos, this.myYPos, "images/" + this.myFileName);
 	}
 
 }

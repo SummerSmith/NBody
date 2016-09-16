@@ -29,7 +29,7 @@ public class NBody {
 			StdDraw.picture(0, 0, "images/starfield.jpg");
 			//go through all the planets in array planets and draw them 
 			for (int i=0; i<planets.length; i++) {
-				planets[i].draw(planets[i].myXPos, planets[i].myYPos, "images/"+ planets[i].myFileName);
+				planets[i].draw();
 			}
 			//play sound track in the background
 			StdAudio.play("audio/2001.mid");
@@ -51,7 +51,7 @@ public class NBody {
 				//redrawing the pictures/planets
 				StdDraw.picture(0, 0, "images/starfield.jpg");
 				for (int s=0; s<planets.length; s++) {
-					planets[s].draw(planets[s].myXPos, planets[s].myYPos, "images/" + planets[s].myFileName);
+					planets[s].draw();
 				}
 				StdDraw.show(10);
 				//incrementing the time variable
